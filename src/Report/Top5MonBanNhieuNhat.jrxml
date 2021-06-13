@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Top5MonBanNhieuNhat" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c13378e9-659a-4aa7-ae5f-5f7001574e4b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="99"/>
+	<queryString>
+		<![CDATA[SELECT MON.MAMON, TENMON, GIA, COUNT(SL) AS SL_BAN
+FROM MON, CTHD
+WHERE CTHD.MAMON=MON.MAMON
+GROUP BY MON.MAMON, TENMON, GIA
+ORDER BY SL_BAN DESC
+FETCH FIRST 5 ROWS WITH TIES]]>
+	</queryString>
+	<field name="MAMON" class="java.math.BigDecimal"/>
+	<field name="TENMON" class="java.lang.String"/>
+	<field name="GIA" class="java.math.BigDecimal"/>
+	<field name="SL_BAN" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="349" splitType="Stretch">
+			<staticText>
+				<reportElement x="161" y="95" width="232" height="34" uuid="c563399c-103a-4757-9a14-fee60c04f32e"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Lucida Handwriting" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CÀ PHÊ OMELY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="223" width="359" height="33" forecolor="#6666FF" uuid="17b08a3a-f933-458e-b705-ca56ac6ed646"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[TOP 5 MÓN BÁN NHIỀU NHẤT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="105" y="129" width="345" height="24" uuid="7aa75c54-41c6-45f1-83fe-04a364a85d05"/>
+				<textElement textAlignment="Center">
+					<font fontName="Verdana" size="12"/>
+				</textElement>
+				<text><![CDATA[Khu dân cư mới thị trấn Phong Phú, Tây Sơn, Bình Định]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="364" y="329" width="69" height="20" forecolor="#999999" uuid="d0f633b1-ad57-446d-a626-8dda61b32c21"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ngày xem:]]></text>
+			</staticText>
+			<image>
+				<reportElement x="235" y="-2" width="85" height="97" uuid="f19c11e8-9bc1-4a1a-9d6a-e5297f3c0863"/>
+				<imageExpression><![CDATA["F:\\PTTKHTTT\\coffe_icon.jpg"]]></imageExpression>
+			</image>
+			<textField pattern="dd/MM/yyyy h:mm:a">
+				<reportElement x="433" y="329" width="122" height="20" forecolor="#999999" uuid="895e7f97-8187-4c5e-a173-a8f95ca2158e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="175" y="153" width="205" height="20" uuid="013edc8a-2b26-4ca4-84e2-f6ad0e872476"/>
+				<textElement textAlignment="Center">
+					<font fontName="Verdana" size="12"/>
+				</textElement>
+				<text><![CDATA[Số điện thoại: 09773747777]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="40" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="1" width="555" height="41" backcolor="#666666" uuid="540f03db-788a-4552-b360-ed0dd077e448"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="34" y="11" width="64" height="20" forecolor="#FFFFFF" uuid="b4414543-8f4c-4a65-a7c3-a1f21062293d"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mã món	]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="161" y="11" width="73" height="20" forecolor="#FFFFFF" uuid="0852d4dc-2ccb-435b-9fb5-f888fb2848f0"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tên món]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="11" width="71" height="20" forecolor="#FFFFFF" uuid="57448dd4-6bcc-46ac-b92c-8f68e80ee265"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Giá]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="433" y="11" width="85" height="20" forecolor="#FFFFFF" uuid="34657672-9fbf-49aa-a65a-c525dbceacbc"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Số lượng bán]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="5" width="555" height="25" backcolor="#CCCCCC" uuid="ac7acf47-c58a-462a-bae1-144b2032972d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="34" y="6" width="64" height="20" uuid="1cf25868-7b0c-46ad-8013-896d72b7b5f9"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MAMON}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="161" y="6" width="73" height="20" uuid="60cc1eaf-9a95-4555-a8e0-af2711a0020f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TENMON}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="293" y="6" width="71" height="20" uuid="2a981ee3-f4d3-42fa-b37c-d74c6e485e56"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{GIA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="433" y="6" width="85" height="20" uuid="9efeb792-dc3b-4e5e-b679-d07bc71c4402"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SL_BAN}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
