@@ -6,7 +6,7 @@
 package DAL;
 
 import static DAL.Database.conectionJDBC;
-import DTO.DangNhapDTO;
+import DataTranferObject.DangNhapDTO;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

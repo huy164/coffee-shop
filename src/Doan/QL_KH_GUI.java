@@ -6,7 +6,7 @@
 package Doan;
 
 import BLL.QuanLyKH_BLL;
-import DTO.KhachHangDTO;
+import DataTranferObject.KhachHangDTO;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;

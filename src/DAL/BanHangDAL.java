@@ -6,9 +6,9 @@
 package DAL;
 
 import static DAL.Database.conectionJDBC;
-import DTO.CTHD_DTO;
-import DTO.HoaDonDTO;
-import DTO.NhanVienDTO;
+import DataTranferObject.CTHD_DTO;
+import DataTranferObject.HoaDonDTO;
+import DataTranferObject.NhanVienDTO;
 import java.sql.CallableStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;

@@ -6,7 +6,7 @@
 package DAL;
 
 import static DAL.Database.conectionJDBC;
-import DTO.Ban_DTO;
+import DataTranferObject.Ban_DTO;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;

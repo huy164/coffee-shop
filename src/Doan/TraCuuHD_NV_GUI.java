@@ -7,7 +7,7 @@ package Doan;
 
 import BLL.QuanLyBH_BLL;
 import DAL.Database;
-import DTO.HoaDonDTO;
+import DataTranferObject.HoaDonDTO;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

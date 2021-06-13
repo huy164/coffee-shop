@@ -6,7 +6,7 @@
 package BLL;
 
 import DAL.NguyenLieuDAL;
-import DTO.NguyenLieuDTO;
+import DataTranferObject.NguyenLieuDTO;
 import java.util.ArrayList;
 
 /**

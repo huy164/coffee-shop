@@ -6,8 +6,8 @@
 package BLL;
 
 import DAL.BanHangDAL;
-import DTO.CTHD_DTO;
-import DTO.HoaDonDTO;
+import DataTranferObject.CTHD_DTO;
+import DataTranferObject.HoaDonDTO;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 

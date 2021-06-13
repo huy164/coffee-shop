@@ -6,8 +6,8 @@
 package BLL;
 
 import DAL.NhanVienDAL;
-import DTO.NhanVienDTO;
-import DTO.TaiKhoanDTO;
+import DataTranferObject.NhanVienDTO;
+import DataTranferObject.TaiKhoanDTO;
 import java.util.ArrayList;
 
 /**

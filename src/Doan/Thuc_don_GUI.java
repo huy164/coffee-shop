@@ -8,8 +8,8 @@ package Doan;
 import BLL.QuanLyNV_BLL;
 import BLL.ThucDonBLL;
 import DAL.ThucDonDAL;
-import DTO.NhanVienDTO;
-import DTO.ThucDonDTO;
+import DataTranferObject.NhanVienDTO;
+import DataTranferObject.ThucDonDTO;
 
 import com.sun.org.apache.xalan.internal.xsltc.compiler.Template;
 import java.util.ArrayList;

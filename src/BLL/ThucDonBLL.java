@@ -5,7 +5,7 @@
  */
 package BLL;
 import DAL.ThucDonDAL;
-import DTO.ThucDonDTO;
+import DataTranferObject.ThucDonDTO;
 import java.util.ArrayList;
 /**
  *

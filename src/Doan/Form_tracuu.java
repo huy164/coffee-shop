@@ -11,12 +11,12 @@ import BLL.NhapHangBLL;
 import BLL.QuanLyKH_BLL;
 import BLL.QuanLyNV_BLL;
 import BLL.ThucDonBLL;
-import DTO.Ban_DTO;
-import DTO.KhachHangDTO;
-import DTO.NguyenLieuDTO;
-import DTO.NhanVienDTO;
-import DTO.NhapHangDTO;
-import DTO.ThucDonDTO;
+import DataTranferObject.Ban_DTO;
+import DataTranferObject.KhachHangDTO;
+import DataTranferObject.NguyenLieuDTO;
+import DataTranferObject.NhanVienDTO;
+import DataTranferObject.NhapHangDTO;
+import DataTranferObject.ThucDonDTO;
 import javax.swing.JOptionPane;
 
 /**

@@ -8,7 +8,7 @@ package Doan;
 import BLL.QuanLyNV_BLL;
 import DAL.DangNhapChuQuanDAL;
 import DAL.DangNhapNVDAL;
-import DTO.DangNhapDTO;
+import DataTranferObject.DangNhapDTO;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;

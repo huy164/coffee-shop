@@ -6,7 +6,7 @@
 package BLL;
 
 import DAL.BanDAL;
-import DTO.Ban_DTO;
+import DataTranferObject.Ban_DTO;
 import java.util.ArrayList;
 
 /**

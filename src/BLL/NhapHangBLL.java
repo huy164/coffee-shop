@@ -7,9 +7,9 @@ package BLL;
 
 import DAL.Database;
 import DAL.NhapHangDAL;
-import DTO.HANGHOADTO;
-import DTO.NCC_DTO;
-import DTO.NhapHangDTO;
+import DataTranferObject.HANGHOADTO;
+import DataTranferObject.NCC_DTO;
+import DataTranferObject.NhapHangDTO;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;

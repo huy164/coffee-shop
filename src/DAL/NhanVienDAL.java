@@ -7,8 +7,8 @@ package DAL;
 
 import static DAL.Database.conectionJDBC;
 import java.sql.ResultSet;
-import DTO.NhanVienDTO;
-import DTO.TaiKhoanDTO;
+import DataTranferObject.NhanVienDTO;
+import DataTranferObject.TaiKhoanDTO;
 
 import java.sql.CallableStatement;
 import java.sql.PreparedStatement;

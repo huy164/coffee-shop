@@ -6,7 +6,7 @@
 package Doan;
 
 import DAL.NguyenLieuDAL;
-import DTO.NguyenLieuDTO;
+import DataTranferObject.NguyenLieuDTO;
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
 

@@ -7,10 +7,10 @@ package Doan;
 
 import BLL.NhapHangBLL;
 import BLL.QuanLyNV_BLL;
-import DTO.HANGHOADTO;
-import DTO.HoaDonDTO;
-import DTO.NCC_DTO;
-import DTO.NhapHangDTO;
+import DataTranferObject.HANGHOADTO;
+import DataTranferObject.HoaDonDTO;
+import DataTranferObject.NCC_DTO;
+import DataTranferObject.NhapHangDTO;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.DateFormat;

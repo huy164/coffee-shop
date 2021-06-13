@@ -6,7 +6,7 @@
 package Doan;
 
 import BLL.BanBLL;
-import DTO.Ban_DTO;
+import DataTranferObject.Ban_DTO;
 import java.awt.Color;
 import java.util.ArrayList;
 import javax.swing.Icon;

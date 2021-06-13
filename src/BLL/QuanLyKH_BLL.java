@@ -9,7 +9,7 @@ import DAL.Database;
 import static DAL.Database.conectionJDBC;
 import DAL.NhanVienDAL;
 import java.sql.ResultSet;
-import DTO.KhachHangDTO;
+import DataTranferObject.KhachHangDTO;
 
 import java.sql.CallableStatement;
 import java.sql.PreparedStatement;

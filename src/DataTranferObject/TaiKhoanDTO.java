@@ -3,35 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DTO;
-import java.io.Serializable;
+package DataTranferObject;
 
 /**
  *
  * @author MSI2
  */
-public class DangNhapDTO implements Serializable
-{
-    private String Role;
+public class TaiKhoanDTO {
     private String TenTK;
     private String MK;
-    private String TrangThai = "Khong dang nhap";
+    private String Role;
+    private String TrangThai;
 
-    public DangNhapDTO(String Role, String TenTk, String MK, String TrangThai) 
+    public TaiKhoanDTO(String TenTK, String MK, String Role) 
     {
-        this.Role = Role;
-        this.TenTK = TenTk;
+        this.TenTK = TenTK;
         this.MK = MK;
-        this.TrangThai = TrangThai;
+        this.Role = Role;
     }
-
-    public DangNhapDTO() 
+    
+    public TaiKhoanDTO() 
     {
         
-    }
-
-    public String getRole() {
-        return Role;
     }
 
     public String getTenTK() {
@@ -42,12 +35,12 @@ public class DangNhapDTO implements Serializable
         return MK;
     }
 
-    public String getTrangThai() {
-        return TrangThai;
+    public String getRole() {
+        return Role;
     }
 
-    public void setRole(String Role) {
-        this.Role = Role;
+    public String getTrangThai() {
+        return TrangThai;
     }
 
     public void setTenTK(String TenTK) {
@@ -58,9 +51,12 @@ public class DangNhapDTO implements Serializable
         this.MK = MK;
     }
 
+    public void setRole(String Role) {
+        this.Role = Role;
+    }
+
     public void setTrangThai(String TrangThai) {
         this.TrangThai = TrangThai;
     }
-    
     
 }

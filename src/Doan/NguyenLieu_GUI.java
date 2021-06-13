@@ -8,7 +8,7 @@ package Doan;
 import BLL.NguyenLieuBLL;
 import DAL.NguyenLieuDAL;
 import DAL.ThucDonDAL;
-import DTO.NguyenLieuDTO;
+import DataTranferObject.NguyenLieuDTO;
 import java.awt.Color;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;

@@ -6,7 +6,7 @@
 package Doan;
 
 import BLL.ThucDonBLL;
-import DTO.ThucDonDTO;
+import DataTranferObject.ThucDonDTO;
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
 

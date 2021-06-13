@@ -5,9 +5,9 @@
  */
 package DAL;
 import static DAL.Database.conectionJDBC;
-import DTO.HANGHOADTO;
-import DTO.NCC_DTO;
-import DTO.NhapHangDTO;
+import DataTranferObject.HANGHOADTO;
+import DataTranferObject.NCC_DTO;
+import DataTranferObject.NhapHangDTO;
 import java.sql.CallableStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
